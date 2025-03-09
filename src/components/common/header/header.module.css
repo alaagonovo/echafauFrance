@@ -1,0 +1,9 @@
+@media (max-width: 1140px) {
+  .links,
+  .roundLink {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+}
