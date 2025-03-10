@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
 export const metadata: Metadata = {
   title: "Echafau'france",
-  description: "",
-  icons: "/assets/logo.webp",
+  description: "Site Web en français avec Next.js",
+  icons: { icon: "/assets/logo.webp" },
+  metadataBase: new URL("https://yourwebsite.com"), // Set base URL
+  openGraph: {
+    title: "Echafau'france",
+    description: "Découvrez Echafau'france, spécialiste en échafaudage",
+    url: "https://yourwebsite.com",
+    siteName: "Echafau'france",
+    images: ["/assets/logo.webp"],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -20,23 +30,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="language" content="fr" />
-        <meta name="description" content="Site Web en français avec Next.js" />
-        {/* Preload Video */}
+    <html lang="fr" className={inter.variable}>
+      <body>
+        <main>{children}</main>
 
+        {/* Preload Video */}
         <link
           rel="preload"
           as="video"
           href="/videos/videoHero.mp4"
           type="video/mp4"
         />
-      </Head>
-      <html lang="fr">
-        <body className={`${inter.variable}`}>{children}</body>
-      </html>
-    </>
+      </body>
+    </html>
   );
 }
