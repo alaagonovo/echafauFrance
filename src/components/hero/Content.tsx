@@ -68,7 +68,7 @@ function Content() {
         name="Obtenir un devis"
         path="/"
         transition={true}
-        delay={14}
+        delay={12.5}
       />
     </div>
   );
