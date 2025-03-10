@@ -2,6 +2,10 @@
 
 :root {
   --spacing: 4px; /* Adjust as needed */
+  --main-red: #ba1514;
+  --dark-red: #730404;
+  --main-blue: #100e79;
+  --dark-blue: #07063f;
 }
 * {
   box-sizing: border-box;
@@ -12,4 +16,10 @@ body {
 h1 {
   /* font-size: 2.7rem; */
   font-weight: 600;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: none;
+  cursor: pointer;
 }

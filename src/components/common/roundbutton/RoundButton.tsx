@@ -6,7 +6,7 @@ function RoundButton({ name, path }: IRoundbtn) {
   return (
     <Link
       href={path}
-      className="inline-block px-8 py-3 rounded-3xl bg-red-500 text-white text-xl  w-fit"
+      className="inline-block px-8 py-3 rounded-4xl bg-[var(--main-red)] text-white text-xl  w-fit"
     >
       {name}
     </Link>

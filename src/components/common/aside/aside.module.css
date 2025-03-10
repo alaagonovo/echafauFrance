@@ -1,0 +1,15 @@
+.animation {
+  animation-name: openAnimation;
+  animation-duration: 200ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes openAnimation {
+  0% {
+    scale: 0.3;
+  }
+  100% {
+    scale: 1;
+  }
+}
