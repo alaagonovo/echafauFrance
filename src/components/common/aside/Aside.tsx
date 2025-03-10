@@ -7,7 +7,7 @@ import styles from "./aside.module.css";
 function Aside({ toggleAside }: IToggleFunc) {
   return (
     <aside
-      className={`${styles.animation} bg-[#F3F4F6] w-full h-[100vh] absolute inset-0 p-4`}
+      className={`${styles.animation} bg-[#F3F4F6] w-full h-[100vh] absolute inset-0 p-4 z-10`}
     >
       <Image
         src="/assets/logo.webp"
