@@ -29,10 +29,10 @@ function Content() {
   }, []);
 
   return (
-    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[15vh] sm:mt-[5%] m-auto md:ml-12  md:h-[65vh] sm:h-[75vh] h-[60vh] flex flex-col justify-between pr-4 md:px-0">
+    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[5vh] sm:mt-[5%] m-auto md:ml-12  md:h-[65vh] h-[75vh]  flex flex-col justify-between pr-4 md:px-0">
       {/* Animated H1 */}
       <motion.h1
-        className="text-white font-medium leading-10 sm:leading-14 md:leading-[65px] md:text-5xl sm:text-4xl text-3xl italic"
+        className="text-white font-medium leading-12 sm:leading-14 md:leading-[65px] md:text-5xl sm:text-4xl text-3xl italic"
         variants={sentence}
         initial="hidden"
         animate="visible"
@@ -49,7 +49,7 @@ function Content() {
       {/* Animated P (Starts AFTER H1 with a manual delay) */}
       {showParagraph && (
         <motion.p
-          className="text-[18px] md:text-[22px] font-normal text-white w-[80%] italic"
+          className="text-[18px] md:text-[22px] font-light sm:font-normal text-white w-[80%] italic"
           variants={sentence}
           initial="hidden"
           animate="visible"

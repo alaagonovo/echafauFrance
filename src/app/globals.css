@@ -16,10 +16,7 @@
 body {
   font-family: var(--font-inter), sans-serif !important;
 }
-h1 {
-  /* font-size: 2.7rem; */
-  font-weight: 600;
-}
+
 button {
   outline: none;
   border: none;
