@@ -26,7 +26,7 @@ function Header() {
           {links.map((link, index) => (
             <li key={index}>
               <Link
-                className="text-xl  text-[var(--main-blue)] leading-6 italic"
+                className="text-xl  text-[var(--main-blue)] leading-6 italic font-medium"
                 href={link.path}
               >
                 {link.name}
