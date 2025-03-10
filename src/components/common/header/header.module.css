@@ -1,3 +1,12 @@
+.links_list {
+  width: 800px;
+}
+@media (max-width: 1245px) {
+  .links_list {
+    width: 710px;
+    padding: 1rem 2rem;
+  }
+}
 @media (max-width: 1140px) {
   .links,
   .roundLink {

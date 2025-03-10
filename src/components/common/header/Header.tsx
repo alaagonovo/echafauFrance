@@ -22,7 +22,9 @@ function Header() {
         />
       </Link>
       <div className={styles.links}>
-        <ul className="flex gap-6 py-4 px-8 bg-[#FFFFFF]  rounded-4xl overflow-hidden">
+        <ul
+          className={`flex justify-between py-4 px-12 bg-[#FFFFFF]  rounded-4xl overflow-hidden ${styles.links_list}`}
+        >
           {links.map((link, index) => (
             <li key={index}>
               <Link
