@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  --font-inter: Inter, sans-serif;
+
   --spacing: 4px; /* Adjust as needed */
   --main-red: #ba1514;
   --dark-red: #730404;
@@ -12,6 +14,7 @@
 }
 
 body {
+  font-family: var(--font-inter), sans-serif !important;
 }
 h1 {
   /* font-size: 2.7rem; */
