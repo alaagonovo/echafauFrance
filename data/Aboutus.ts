@@ -8,12 +8,14 @@ const aboutUsData = [
   },
   {
     icon: "/svgs/secure.svg",
-    color: "#32CD32",
+    color: "var(--dark-red)",
+    // color: "#32CD32",
     desc: `La sécurité a toujours été notre pierre angulaire. Depuis ${expYears} ans, nous avons fièrement maintenu un taux d’accidents de 0% grâce à notre planification minutieuse et à nos procédures rigoureuses, de l’assemblage au démontage.`,
   },
   {
     icon: "/svgs/power.svg",
-    color: "#FFFF00",
+    color: "var(--dark-red)",
+    // color: "#FFFF00",
     desc: `Aujourd’hui, en ${currentYear}, nous sommes le témoignage du pouvoir de l’innovation constante et du savoir-faire. Face2Face est bien plus qu’une entreprise d’échafaudage—nous sommes une promesse de fournir des solutions alliant fiabilité et durabilité.`,
   },
 ];
