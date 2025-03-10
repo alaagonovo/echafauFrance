@@ -18,7 +18,7 @@ function Aside({ toggleAside }: IToggleFunc) {
       />
       <button
         onClick={toggleAside}
-        className="p-2 rounded-4xl ring-1 ring-[#ba1514] block ml-auto"
+        className="p-2 rounded-4xl ring-2 ring-[#ba1514] block ml-auto"
       >
         <Image src="/svgs/cross.svg" alt="cross Icon" width={35} height={35} />
       </button>

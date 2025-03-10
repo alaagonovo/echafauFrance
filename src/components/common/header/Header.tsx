@@ -39,7 +39,7 @@ function Header() {
         <RoundButton name="Obtenir un devis" path="/" />
       </div>
       <button
-        className={`p-2 rounded-[50%] ring-1 ring-[#FF6F61] hidden ${styles.menuIcon}`}
+        className={`p-2 rounded-[50%] ring-2 ring-[var(--main-red)] hidden ${styles.menuIcon}`}
         onClick={toggleAside}
       >
         <Image src="/svgs/menu.svg" alt="menu icon" width={35} height={35} />
