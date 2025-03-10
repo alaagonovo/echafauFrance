@@ -1,0 +1,18 @@
+.transbtn {
+  animation-name: btnOpacity;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btnOpacity {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
