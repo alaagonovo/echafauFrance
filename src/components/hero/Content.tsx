@@ -29,7 +29,7 @@ function Content() {
   }, []);
 
   return (
-    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[5vh] sm:mt-[5%] m-auto md:ml-12  md:h-[65vh] h-[75vh]  flex flex-col justify-between pr-4 md:px-0">
+    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[5vh] sm:mt-[5%] m-auto md:ml-12  md:h-[65vh] h-[70vh]  flex flex-col justify-between pr-4 md:px-0">
       {/* Animated H1 */}
       <motion.h1
         className="text-white font-medium leading-12 sm:leading-14 md:leading-[65px] md:text-5xl sm:text-4xl text-3xl italic"
