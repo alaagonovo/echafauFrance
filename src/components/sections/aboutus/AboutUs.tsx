@@ -5,10 +5,11 @@ import Maintitle from "@/components/common/maintitletext/Maintitle";
 
 function AboutUs() {
   return (
-    <section className=" mt-16  mx-auto max-w-[1380px]">
+    <section className="mt-16  mx-auto max-w-[1380px]">
       <Maintitle
         title="À propos de nous"
         bio="Echafau, fort de 18 ans d'excellence en Europe, offre des solutions d’échafaudage 100% métalliques, durables et innovantes. Avec un taux d’accidents de 0%, nous garantissons sécurité et fiabilité à chaque projet."
+        setPadding={true}
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[.9fr_1.1fr] gap-12 w-full lg:w-[94%] xl:w-[92%] mx-auto ">
         <div className="relative w-full rounded-0 lg:rounded-2xl overflow-hidden lg:h-full sm:h-[650px] h-[450px]">
@@ -17,6 +18,7 @@ function AboutUs() {
             alt="about Image view"
             fill
             style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
+            loading="lazy"
           />
         </div>
         <div className="grid gap-8 grid-cols-1 lg:px-0 px-4">
