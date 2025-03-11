@@ -12,9 +12,9 @@ function Maintitle({ title, bio, bio_Color, setPadding }: IMaintitle) {
         {title}
       </h1>
       <p
-        className={`text-center italic leading-5  text-[12px] sm:text-base text-[${
-          bio_Color ? bio_Color : "var(--main-red)"
-        }]`}
+        className={`text-center italic leading-5 text-[12px] sm:text-base ${
+          bio_Color ? `text-[${bio_Color}]` : `text-[var(--main-red)]`
+        }`}
       >
         {bio}
       </p>
