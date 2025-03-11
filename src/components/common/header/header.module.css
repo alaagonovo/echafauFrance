@@ -1,5 +1,5 @@
 .links_list {
-  width: 800px;
+  width: 700px;
 }
 @media (max-width: 1245px) {
   .links_list {
@@ -11,6 +11,13 @@
   .links,
   .roundLink {
     display: none;
+  }
+  .main_header {
+    width: 100%;
+    top: 0;
+  }
+  .controls {
+    border-radius: 0;
   }
   .menuIcon {
     display: block;
