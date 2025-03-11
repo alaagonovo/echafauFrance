@@ -24,12 +24,11 @@ function Content() {
     const timer = setTimeout(() => {
       setShowParagraph(true);
     }, 5000); // Adjust timing based on how long H1 takes
-
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[10vh] sm:mt-[7%] m-auto md:ml-12  h-[65vh]  flex flex-col justify-between pr-4 md:px-0">
+    <div className="w-[94%] lg:max-w-[800px] md:max-w-[700px] mt-[10vh] sm:mt-[7%] m-auto md:ml-12  h-[65vh]  flex flex-col justify-between pr-4 md:px-0 min-h-[490px]">
       {/* Animated H1 */}
       <motion.h1
         className="text-white font-medium leading-12 sm:leading-14 md:leading-[65px] md:text-5xl sm:text-4xl text-3xl italic"

@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <MainHero />
       <AboutUs />
+      <div className="my-4"></div>
     </>
   );
 }

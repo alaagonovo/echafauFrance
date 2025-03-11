@@ -6,7 +6,7 @@ import Content from "./Content";
 function MainHero() {
   return (
     <section
-      className="h-[100vh] relative"
+      className="h-[100vh] relative min-h-[700px]"
       style={{ clipPath: "polygon(0 0, 100% 0%, 100% 90%, 0% 100%)" }}
     >
       <div className="left-0 right-0 top-0 bottom-0 absolute after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/65 -z-10">
