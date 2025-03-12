@@ -7,6 +7,9 @@ const config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: { max: "389px" }, // Applies styles when screen width is < 390px
+      },
       colors: {
         mainBlue: "var(--main-blue)",
         customGreen: "#10B981",

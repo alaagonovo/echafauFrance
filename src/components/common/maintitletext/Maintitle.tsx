@@ -22,9 +22,7 @@ function Maintitle({ title, bio, bio_Color, setPadding }: IMaintitle) {
         className={`w-[50px] h-[4px] rounded-2xl bg-[${
           bio_Color ? bio_Color : "var(--main-red)"
         }] mx-auto mt-2`}
-      >
-        {/* bg-[var(--main-red)] */}
-      </p>
+      ></p>
     </div>
   );
 }

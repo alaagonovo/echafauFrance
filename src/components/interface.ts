@@ -26,3 +26,10 @@ interface IDate {
   month: string;
   year: string;
 }
+
+export interface IStc {
+  num: number;
+  sign?: string;
+  title: string;
+  desc: string;
+}
