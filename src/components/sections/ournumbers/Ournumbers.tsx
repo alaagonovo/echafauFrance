@@ -9,7 +9,7 @@ function Ournumbers() {
       <div>
         <h1 className="text-6xl sm:text-7xl font-semibold text-center sm:text-start">
           <span
-            className="bg-[var(--dark-red)] text-white ps-4 lg:pe-8 pe-6 inline-block"
+            className="bg-[var(--dark-red)] text-white py-2 sm:py-0 ps-4 lg:pe-8 pe-6 inline-block"
             style={{ clipPath: "polygon(0 0, 100% 0, 81% 100%, 0% 100%)" }}
           >
             Nos

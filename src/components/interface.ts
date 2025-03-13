@@ -33,3 +33,9 @@ export interface IStc {
   title: string;
   desc: string;
 }
+
+export interface IService {
+  icon: string;
+  title: string;
+  paragraph: string;
+}
