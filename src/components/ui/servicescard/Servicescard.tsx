@@ -10,7 +10,7 @@ function Servicescard({ service }: { service: IService }) {
         <div className="w-[80px] h-[80px] rounded-2xl  p-4 bg-white">
           <Image src={icon} alt="icon of service" width={48} height={48} />
         </div>
-        <h1 className="text-2xl font-medium my-2 text-white">{title}</h1>
+        <h1 className="text-2xl font-medium mt-6 mb-1 text-white">{title}</h1>
         <p className="text-sm text-white">{paragraph}</p>
       </article>
     </div>
