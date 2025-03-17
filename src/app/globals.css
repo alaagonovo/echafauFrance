@@ -1,8 +1,8 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --font-inter: Inter, sans-serif;
-
   --spacing: 4px; /* Adjust as needed */
   --main-red: #ba1514;
   --dark-red: #730404;
@@ -15,12 +15,16 @@
   --review-dark-color: #aed9fa;
   --review-title-color: #263238;
 }
+
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: var(--font-inter), sans-serif !important;
+  font-family: "Urbanist", sans-serif;
 }
 
 button {

@@ -5,7 +5,7 @@ import Maintitle from "@/components/common/maintitletext/Maintitle";
 
 function AboutUs() {
   return (
-    <section className="mt-16  mx-auto max-w-[1380px]">
+    <section className="mt-16  mx-auto max-w-[1380px]" id="aproposdenous">
       <Maintitle
         title="À propos de nous"
         bio="Echafau, fort de 18 ans d'excellence en Europe, offre des solutions d’échafaudage 100% métalliques, durables et innovantes. Avec un taux d’accidents de 0%, nous garantissons sécurité et fiabilité à chaque projet."

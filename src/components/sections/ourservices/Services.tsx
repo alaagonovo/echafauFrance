@@ -10,6 +10,7 @@ function Services() {
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/servview.jpg)",
       }}
+      id="services"
     >
       <div className="max-w-[1380px] mx-auto">
         <div className="w-[94%] mx-auto">

@@ -7,7 +7,7 @@ import styles from "./aside.module.css";
 function Aside({ toggleAside }: IToggleFunc) {
   return (
     <aside
-      className={`${styles.animation} bg-[#F3F4F6] w-full h-[100vh] absolute inset-0 p-4 z-10`}
+      className={`${styles.animation} bg-[#F3F4F6] w-full h-[100vh] fixed inset-0 p-4 z-10`}
     >
       <Image
         src="/assets/logo.webp"
@@ -18,7 +18,7 @@ function Aside({ toggleAside }: IToggleFunc) {
       />
       <button
         onClick={toggleAside}
-        className="p-2 rounded-4xl ring-2 ring-[#ba1514] block ml-auto"
+        className="p-2 rounded-4xl ring-2 ring-[#ba1514] block ml-auto "
       >
         <Image src="/svgs/cross.svg" alt="cross Icon" width={35} height={35} />
       </button>
@@ -26,7 +26,8 @@ function Aside({ toggleAside }: IToggleFunc) {
         {links.map((link, index) => (
           <li key={index} className="my-4">
             <Link
-              className=" text-[var(--main-blue)] text-[44px] leading-14 m-auto sm:leading-20  sm:text-7xl font-medium italic"
+              className=" text-[var(--main-blue)] text-[44px] leading-14 m-auto sm:leading-20  sm:text-7xl font-medium"
+              onClick={toggleAside}
               href={link.path}
             >
               {link.name}

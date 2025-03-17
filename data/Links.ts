@@ -5,11 +5,11 @@ const links = [
   },
   {
     name: "À propos de nous",
-    path: "/",
+    path: "/#aproposdenous",
   },
   {
     name: "Services",
-    path: "/",
+    path: "/#services",
   },
   {
     name: "Projets",

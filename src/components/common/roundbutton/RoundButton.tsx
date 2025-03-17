@@ -6,7 +6,7 @@ function RoundButton({ name, path, transition, delay }: IRoundbtn) {
   return (
     <Link
       href={path}
-      className={`inline-block px-8  py-3  rounded-4xl bg-[var(--main-red)] text-white text-xl text-nowrap  w-max h-fit ${
+      className={`inline-block px-6  py-3  bg-[var(--main-red)] text-white text-xl text-nowrap  w-max h-fit ${
         transition && styles.transbtn
       }`}
       style={transition ? { animationDelay: `${delay}s` } : {}}

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import React from "react";
 import "./globals.css";
+import Header from "@/components/common/header/Header";
 const Footer = React.lazy(() => import("@/components/common/footer/Footer"));
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const urbanist = Urbanist({
+  subsets: ["latin"], // Add other subsets if needed
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
-
 export const metadata: Metadata = {
   title: "Echafau'france",
   description: "Site Web en français avec Next.js",
@@ -32,8 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr" className={urbanist.className}>
       <body>
+        <Header />
         <main>{children}</main>
         <Footer />
         {/* Preload Video */}

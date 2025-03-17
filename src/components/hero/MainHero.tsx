@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../common/header/Header";
+
 import Content from "./Content";
 // import Image from "next/image";
 
@@ -35,7 +35,6 @@ function MainHero() {
           className="object-cover object-center"
         /> */}
         </div>
-        <Header />
         <Content />
       </div>
     </section>
