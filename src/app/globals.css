@@ -9,6 +9,11 @@
   --main-blue: #100e79;
   --dark-blue: #07063f;
   --text-color: #475467;
+  --review-active-color: #e3f2fd;
+  --review-semilight-color: #d3eafc;
+  --review-semidark-color: #c1e1fc;
+  --review-dark-color: #aed9fa;
+  --review-title-color: #263238;
 }
 * {
   box-sizing: border-box;

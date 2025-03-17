@@ -39,3 +39,8 @@ export interface IService {
   title: string;
   paragraph: string;
 }
+
+export interface IFaqs {
+  question: string;
+  answer: string;
+}
