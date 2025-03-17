@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import React from "react";
 import "./globals.css";
+const Footer = React.lazy(() => import("@/components/common/footer/Footer"));
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +35,7 @@ export default function RootLayout({
     <html lang="fr" className={inter.variable}>
       <body>
         <main>{children}</main>
-
+        <Footer />
         {/* Preload Video */}
         <link
           rel="preload"
