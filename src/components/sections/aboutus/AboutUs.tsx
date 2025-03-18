@@ -1,7 +1,7 @@
 import React from "react";
 import aboutUsData from "../../../../data/Aboutus";
 import Image from "next/image";
-import RoundButton from "@/components/common/roundbutton/RoundButton";
+// import RoundButton from "@/components/common/roundbutton/RoundButton";
 // import Maintitle from "@/components/common/maintitletext/Maintitle";
 
 function AboutUs() {
