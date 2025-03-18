@@ -15,7 +15,7 @@ function AboutUs() {
       <p className="w-[92%] mx-auto text-center font-medium py-8 text-[var(--dark-red)]">
         À Propos
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[.9fr_1.1fr] gap-22 w-full lg:w-[94%] xl:w-[92%] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[.9fr_1.1fr] gap-12 lg:gap-22 w-full lg:w-[94%] xl:w-[92%] mx-auto">
         <div className=" flex flex-col gap-6">
           <div
             className="relative w-full rounded-0  overflow-hidden max-w-[470px] lg:h-full h-[450px] mx-auto"
