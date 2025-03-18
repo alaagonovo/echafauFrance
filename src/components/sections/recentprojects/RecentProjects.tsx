@@ -12,7 +12,8 @@ function RecentProjects() {
           <Maintitle
             title="Projets Récents"
             bio="Découvrez notre portfolio de projets d'échafaudage réalisés : une vitrine de précision, d'innovation et d'excellence à travers des structures variées."
-            bio_Color="var(--main-blue)"
+            title_Color="#000"
+            bio_Color="#000"
           />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {projectsData.map((pro, index) => (
@@ -21,7 +22,7 @@ function RecentProjects() {
           </div>
           <Link
             href="/"
-            className="px-12 py-4 bg-[var(--main-blue)] text-white block w-fit mt-12 mx-auto"
+            className="px-12 py-4 bg-[var(--main-red)] text-white block w-fit mt-12 mx-auto"
           >
             Voir tous les projets
           </Link>

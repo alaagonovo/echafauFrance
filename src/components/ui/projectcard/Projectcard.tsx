@@ -9,10 +9,8 @@ function Projectcard({ proDetails }: { proDetails: IPcard }) {
       <div className="relative h-[280px]">
         <Image src={image} alt="" fill className="object-cover" />
       </div>
-      <h1 className="text-xl my-6 font-medium text-[var(--main-blue)] px-10 text-center">
-        {title}
-      </h1>
-      <time className="absolute bg-[var(--main-blue)] font-thin top-0 text-white py-4 px-1 w-[70px] text-center">
+      <h1 className="text-xl my-6 font-medium  px-10 text-center">{title}</h1>
+      <time className="absolute bg-[var(--main-red)] font-thin top-0 text-white py-4 px-1 w-[70px] text-center">
         <span className="font-semibold">{date.day}</span>
         <br />
         {date.month}

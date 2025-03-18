@@ -12,6 +12,7 @@ export interface IToggleFunc {
 export interface IMaintitle {
   title: string;
   bio: string;
+  title_Color?: string;
   bio_Color?: string;
   setPadding?: boolean;
 }
