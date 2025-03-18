@@ -29,9 +29,8 @@ function Maintitle({
         {bio}
       </p>
       <p
-        className={`w-[50px] h-[4px] rounded-2xl bg-[${
-          bio_Color ? bio_Color : "var(--main-red)"
-        }] mx-auto mt-2`}
+        className="w-[50px] h-[4px] rounded-2xl mx-auto mt-2"
+        style={{ backgroundColor: bio_Color || "var(--main-red)" }}
       ></p>
     </div>
   );
