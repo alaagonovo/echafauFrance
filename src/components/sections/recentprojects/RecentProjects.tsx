@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function RecentProjects() {
   return (
-    <section className=" mt-12 py-16 bg-[#ddd]">
+    <section className="mt-20 sm:mt-24 py-16 bg-[#ddd]">
       <div className="max-w-[1380px] mx-auto">
         <div className="w-[92%] mx-auto">
           <Maintitle

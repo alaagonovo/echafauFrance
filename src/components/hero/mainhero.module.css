@@ -1,0 +1,15 @@
+.main_clippath {
+  clip-path: polygon(0 0, 40% 0, 100% 0, 100% 90%, 84% 100%, 66% 92%, 0 100%);
+}
+.red_clippath {
+  clip-path: polygon(100% 0, 100% 86%, 48% 100%, 0 95%, 0 50%, 0% 0%);
+}
+
+@media (max-width: 565px) {
+  .red_clippath {
+    display: none;
+  }
+  .main_clippath {
+    clip-path: none;
+  }
+}

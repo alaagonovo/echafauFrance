@@ -25,7 +25,7 @@ function Header() {
       <div
         // data-aos="fade-up"
         // data-aos-delay="300"
-        className={`p-4 lg:py-4 lg:px-8 absolute w-full translate-x-[-50%] left-[50%]  ${styles.controls}`}
+        className={`p-4 lg:py-4 lg:px-8 absolute lg:bg-transparent bg-white w-full translate-x-[-50%] left-[50%]  ${styles.controls}`}
       >
         {/* logo */}
         <div className="flex items-center relative justify-between">
@@ -44,7 +44,7 @@ function Header() {
               {links.map((link, index) => (
                 <li key={index}>
                   <Link
-                    className="text-[18px] text-white leading-6  font-medium"
+                    className="text-[24px] text-white leading-6  font-medium"
                     href={link.path}
                   >
                     {link.name}

@@ -1,9 +1,9 @@
 .links_list {
-  width: 700px;
+  width: 860px;
 }
 @media (max-width: 1245px) {
   .links_list {
-    width: 710px;
+    width: 780px;
     padding: 1rem 2rem;
   }
 }

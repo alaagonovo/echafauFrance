@@ -13,11 +13,11 @@ const links = [
   },
   {
     name: "Projets",
-    path: "/",
+    path: "/projects",
   },
   {
     name: "FAQ",
-    path: "/",
+    path: "/#faqs",
   },
   {
     name: "Contactez-nous",
