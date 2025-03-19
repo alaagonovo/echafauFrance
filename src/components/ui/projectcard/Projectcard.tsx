@@ -5,7 +5,7 @@ import React from "react";
 function Projectcard({ proDetails }: { proDetails: IPcard }) {
   const { image, title, date } = proDetails;
   return (
-    <article className="max-w-[460px] lg:max-w-full lg:w-full relative overflow-hidden bg-white mx-auto">
+    <article className="max-w-[460px] lg:max-w-full lg:w-full relative overflow-hidden bg-white mx-auto rounded-xl">
       <div className="relative h-[280px]">
         <Image src={image} alt="" fill className="object-cover" />
       </div>

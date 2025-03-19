@@ -45,3 +45,11 @@ export interface IFaqs {
   question: string;
   answer: string;
 }
+
+export interface IProject {
+  image: string;
+  category: string;
+  title: string;
+  description: string;
+  date: string;
+}

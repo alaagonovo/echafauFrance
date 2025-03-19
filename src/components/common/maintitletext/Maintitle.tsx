@@ -22,7 +22,7 @@ function Maintitle({
         {title}
       </h1>
       <p
-        className={`text-center italic leading-5 text-[12px] sm:text-base ${
+        className={`text-center  leading-7 text-base sm:text-[21px] ${
           bio_Color ? `text-[${bio_Color}]` : `text-[var(--main-red)]`
         }`}
       >

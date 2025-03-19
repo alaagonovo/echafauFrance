@@ -49,7 +49,7 @@ function AboutUs() {
               >
                 <Image src={item.icon} fill alt="icon" />
               </div>
-              <p className="text-xl">{item.desc}</p>
+              <p className="text-[21px]">{item.desc}</p>
             </div>
           ))}
         </div>

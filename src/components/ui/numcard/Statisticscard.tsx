@@ -8,7 +8,7 @@ function Statisticscard({ stc }: { stc: IStc }) {
   const { num, sign, title, desc } = stc;
   return (
     <article ref={ref}>
-      <h1 className="text-7xl text-center font-semibold text-[var(--dark-red)] leading-18">
+      <h1 className="text-7xl text-center font-semibold text-[var(--main-red)] leading-18">
         {inView ? <SlotCounter startValue={0} value={num} duration={1.5} /> : 0}
         {sign && <span>{sign}</span>}
       </h1>

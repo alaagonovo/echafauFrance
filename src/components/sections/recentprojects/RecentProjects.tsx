@@ -2,7 +2,8 @@ import Maintitle from "@/components/common/maintitletext/Maintitle";
 import React from "react";
 import projectsData from "../../../../data/Projects";
 import Projectcard from "@/components/ui/projectcard/Projectcard";
-import Link from "next/link";
+
+import RoundButton from "@/components/common/roundbutton/RoundButton";
 
 function RecentProjects() {
   return (
@@ -20,12 +21,9 @@ function RecentProjects() {
               <Projectcard key={index} proDetails={pro} />
             ))}
           </div>
-          <Link
-            href="/"
-            className="px-12 py-4 bg-[var(--main-red)] text-white block w-fit mt-12 mx-auto"
-          >
-            Voir tous les projets
-          </Link>
+          <div className="block w-fit mt-12 mx-auto">
+            <RoundButton name="Voir tous les projets" path="/projects" />
+          </div>
         </div>
       </div>
     </section>

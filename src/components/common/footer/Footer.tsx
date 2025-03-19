@@ -2,10 +2,12 @@ import Image from "next/image";
 import React from "react";
 import links from "../../../../data/Links";
 import Link from "next/link";
-
+import styles from "./footer.module.css";
 function Footer() {
   return (
-    <footer className="bg-[#191919] py-12 text-white">
+    <footer
+      className={`bg-[#191919] pt-16 sm:pt-24 pb-12 text-white ${styles.footer_container}`}
+    >
       <div className="w-[90%] mx-auto md:grid-cols-2 grid lg:grid-cols-3 gap-8">
         <div>
           <Link href="/">

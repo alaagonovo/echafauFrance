@@ -9,7 +9,7 @@ import RoundButton from "@/components/common/roundbutton/RoundButton";
 function Faqs() {
   return (
     <section
-      className="h-auto  relative py-16 lg:py-24 mt-4"
+      className="h-auto  relative pb-28 pt-16 lg:pb-28 lg:pt-24 mt-4"
       style={{ backgroundColor: "rgba(186, 21, 20,0.9)" }}
       id="faqs"
     >
