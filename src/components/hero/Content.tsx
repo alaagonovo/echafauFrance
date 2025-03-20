@@ -13,7 +13,7 @@ function Content() {
         parfaitement aux besoins de votre projet.
       </p>
 
-      <RoundButton name="Obtenir un devis" path="/" transition={true} />
+      <RoundButton name="Contactez-nous" path="/getintouch" />
     </div>
   );
 }

@@ -3,6 +3,7 @@ export interface IRoundbtn {
   path: string;
   transition?: boolean;
   delay?: number;
+  background?: string;
 }
 
 export interface IToggleFunc {
@@ -11,7 +12,7 @@ export interface IToggleFunc {
 
 export interface IMaintitle {
   title: string;
-  bio: string;
+  bio?: string;
   title_Color?: string;
   bio_Color?: string;
   setPadding?: boolean;
@@ -33,6 +34,7 @@ export interface IStc {
   sign?: string;
   title: string;
   desc: string;
+  icon: string;
 }
 
 export interface IService {

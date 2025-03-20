@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import React from "react";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/common/header/Header";
+// import WithAOS from "@/components/ui/withAOS/WithAos";
 const Footer = React.lazy(() => import("@/components/common/footer/Footer"));
 
 const urbanist = Urbanist({

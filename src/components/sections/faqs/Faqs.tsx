@@ -10,7 +10,7 @@ function Faqs() {
   return (
     <section
       className="h-auto  relative pb-28 pt-16 lg:pb-28 lg:pt-24 mt-4"
-      style={{ backgroundColor: "rgba(186, 21, 20,0.9)" }}
+      style={{ backgroundColor: "rgba(0,38,82,0.95)" }}
       id="faqs"
     >
       <Image
@@ -44,22 +44,26 @@ function Faqs() {
           ))}
         </div>
         <div>
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-delay="400"
             className="mt-16 p-8 bg-white rounded-2xl flex  justify-between flex-col lg:flex-row w-fit lg:w-full items-end gap-4"
-          >
-            <div>
-              <h1 className="text-xl leading-8 text-btnbg font-semibold text-[var(--main-red)]">
+          > */}
+          <div className="flex justify-center mt-16">
+            {/* <h1 className="text-xl leading-8 text-btnbg font-semibold text-[var(--main-red)]">
                 Vous avez encore des questions ?
               </h1>
               <p className="text-btnbg leading-7 text-lg mt-2 text-[var(--main-red)]">
                 Vous ne trouvez pas la réponse que vous cherchez ? Veuillez
                 discuter avec notre équipe sympathique.
               </p>
-            </div>
+            </div> */}
 
-            <RoundButton name="Contactez-nous" path="/" />
+            <RoundButton
+              name="Contactez-nous"
+              path="/"
+              background="transparent"
+            />
           </div>
         </div>
       </div>

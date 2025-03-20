@@ -29,7 +29,7 @@ function Hero() {
           soutenant des projets de toutes tailles en construction, maintenance
           et restauration.
         </p>
-        <RoundButton name="Obtenir un devis" path="/" />
+        <RoundButton name="Contactez-nous" path="/getintouch" />
       </div>
     </section>
   );
