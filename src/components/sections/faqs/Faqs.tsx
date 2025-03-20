@@ -44,24 +44,10 @@ function Faqs() {
           ))}
         </div>
         <div>
-          {/* <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            className="mt-16 p-8 bg-white rounded-2xl flex  justify-between flex-col lg:flex-row w-fit lg:w-full items-end gap-4"
-          > */}
           <div className="flex justify-center mt-16">
-            {/* <h1 className="text-xl leading-8 text-btnbg font-semibold text-[var(--main-red)]">
-                Vous avez encore des questions ?
-              </h1>
-              <p className="text-btnbg leading-7 text-lg mt-2 text-[var(--main-red)]">
-                Vous ne trouvez pas la réponse que vous cherchez ? Veuillez
-                discuter avec notre équipe sympathique.
-              </p>
-            </div> */}
-
             <RoundButton
-              name="Contactez-nous"
-              path="/"
+              name="Obtenir un devis"
+              path="/getaquote"
               background="transparent"
             />
           </div>
