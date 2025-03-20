@@ -2,8 +2,8 @@
 import React from "react";
 import Groupicon from "./Groupicon";
 import asideData from "../../../../data/asideformdata";
-import SocialIcon from "./SocialIcon";
-import socialData from "../../../../data/socialIcons";
+// import SocialIcon from "./SocialIcon";
+// import socialData from "../../../../data/socialIcons";
 import { usePathname } from "next/navigation";
 
 function AsideForm() {
@@ -25,11 +25,11 @@ function AsideForm() {
           <Groupicon group={item} index={index} key={index} />
         ))}
       </div>
-      <div className="flex gap-8 mt-12">
+      {/* <div className="flex gap-8 mt-12">
         {socialData.map((icon, index) => (
           <SocialIcon icon={icon} key={index} index={index} />
         ))}
-      </div>
+      </div> */}
     </aside>
   );
 }

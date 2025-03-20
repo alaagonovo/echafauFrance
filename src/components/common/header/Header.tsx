@@ -54,7 +54,7 @@ function Header() {
             </ul>
           </div>
           <div className={styles.roundLink}>
-            <RoundButton name="Obtenir un devis" path="/" />
+            <RoundButton name="Obtenir un devis" path="/getaquote" />
           </div>
           <button
             className={`p-2 rounded-[50%] ring-2 ring-[var(--main-red)] hidden ${styles.menuIcon}`}

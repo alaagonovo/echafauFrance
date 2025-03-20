@@ -125,11 +125,8 @@ export default function GetAQuotePage() {
           data-aos-delay="550"
           data-aos-offset="0"
         >
-          <label
-            htmlFor="first_name"
-            className="block mb-2 text-sm font-medium text-labelColor"
-          >
-            Where do you need the Scaffolder?
+          <label htmlFor="first_name" className="block mb-2  font-medium">
+            Où avez-vous besoin de l’échafaudeur ?
           </label>
           <input
             type="text"
@@ -140,15 +137,16 @@ export default function GetAQuotePage() {
               setFormValues({ ...formValues, [e.target.name]: e.target.value });
             }}
             onClick={() => setOpenDropdownIndex(null)}
-            className="text-placeholderColor text-base rounded-lg  block w-full p-2.5 placeholder-placeholderColor border border-borderColor"
-            placeholder="Enter your postcode or town"
+            className="text-black text-base rounded-lg  block w-full p-2.5  border placeholder-black border-black"
+            placeholder="Entrez votre code postal ou votre ville"
             required
+            style={{ borderColor: "black" }}
           />
         </div>
         <input
           type="submit"
           value="Send Your Quote"
-          className="px-4 py-3 mt-3 bg-btnbg text-white rounded-3xl font-semibold cursor-pointer"
+          className="px-4 py-3 mt-3 bg-[var(--main-red)] text-white rounded-3xl font-semibold cursor-pointer"
           data-aos="fade-up"
           data-aos-delay="650"
           data-aos-offset="0"

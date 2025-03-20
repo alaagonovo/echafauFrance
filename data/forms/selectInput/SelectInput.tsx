@@ -49,10 +49,7 @@ function SelectInput({
 
   return (
     <div className="relative w-full">
-      <label
-        htmlFor={name}
-        className="block mb-2 text-sm font-medium text-labelColor"
-      >
+      <label htmlFor={name} className="block mb-2  font-medium ">
         {label}
       </label>
 
