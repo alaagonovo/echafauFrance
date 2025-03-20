@@ -1,8 +1,8 @@
 "use client";
-import getaquote from "@/app/data/gatauote";
-import SelectInput from "@/app/ui/forms/selectInput/SelectInput";
-import MainTitle from "@/app/ui/mainTitle/MainTitle";
-import SuccessModal from "@/app/ui/succesModal/SuccessModal";
+import getaquote from "../../../../data/gatauote";
+import SelectInput from "../../../../data/forms/selectInput/SelectInput";
+import MainTitle from "../../../components/ui/mainTitle/MainTitle";
+import SuccessModal from "../../../components/ui/succesModal/SuccessModal";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 export default function GetAQuotePage() {

@@ -14,7 +14,7 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "Scafolding",
   description: "Get in Touch | Inquery",
-  icons: "/svgs/logolap.svg",
+  icons: "/assets/logo.webp",
 };
 export default function GetAQuoteLayout({
   children,
