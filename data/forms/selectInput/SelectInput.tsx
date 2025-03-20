@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Downdroparrow from "../../../../../public/svgs/downdroparrow";
+import Downdroparrow from "../../../public/svgs/downdroparrow";
 
 interface IFormState {
   [key: string]: string; // Allow dynamic keys
