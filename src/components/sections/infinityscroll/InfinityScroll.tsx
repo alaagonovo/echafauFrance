@@ -1,106 +1,22 @@
-// "use client";
-// import React, { useRef, useEffect, useState } from "react";
-// import styles from "./Infinityscroll.module.css";
-// import Card from "../card/Card";
-// import { IPelements } from "@/components/interface";
-
-// function InfinityScroll({ elements }: { elements: IPelements[] }) {
-//   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-//   const containerRef = useRef<HTMLDivElement>(null);
-
-//   useEffect(() => {
-//     const updateActiveCard = () => {
-//       if (!containerRef.current) return;
-//       const cards = Array.from(
-//         containerRef.current.querySelectorAll(".scroll-card")
-//       );
-//       const containerCenter = window.innerWidth / 2;
-
-//       let closestIndex = 0;
-//       let closestDistance = Infinity;
-
-//       cards.forEach((card, index) => {
-//         const rect = card.getBoundingClientRect();
-//         const cardCenter = rect.left + rect.width / 2;
-//         const distance = Math.abs(containerCenter - cardCenter);
-
-//         if (distance < closestDistance) {
-//           closestDistance = distance;
-//           closestIndex = index;
-//         }
-//       });
-
-//       setActiveIndex(closestIndex);
-//     };
-
-//     const scrollInterval = setInterval(updateActiveCard, 100); // Update continuously
-
-//     return () => clearInterval(scrollInterval);
-//   }, []);
-
-//   return (
-//     <div className={styles["scroll-wrapper"]} ref={containerRef}>
-//       <div
-//         className={`${styles["scroll-track-left"]} flex
-//   gap-[50px]`}
-//       >
-//         {elements.map((item, index) => {
-//           let scaleClass = "scale-80  duration-5000"; // Default small size
-
-//           if (index === activeIndex) {
-//             scaleClass = "scale-110"; // Center card
-//           } else if (index === activeIndex! - 1 || index === activeIndex! + 1) {
-//             scaleClass = "scale-95   duration-5000"; // Adjacent cards
-//           }
-
-//           return (
-//             <div
-//               key={index}
-//               className={`scroll-card transition-all duration-5000 ease-in-out ${scaleClass}`}
-//             >
-//               <Card review={item} />
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default InfinityScroll;
 "use client";
 import React, { useRef, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import styles from "./Infinityscroll.module.css";
 import Card from "../card/Card";
 import { IPelements } from "@/components/interface";
 
 function InfinityScroll({ elements }: { elements: IPelements[] }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [isInViewport, setIsInViewport] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // Intersection Observer to detect when the section is in the viewport
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInViewport(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
-      }
-    };
-  }, []);
+  // Detect when the section is in the viewport
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Triggers when 10% of the section is visible
+    triggerOnce: false, // Keeps tracking
+  });
 
   useEffect(() => {
-    if (!isInViewport) return;
+    if (!inView) return; // Only update when in view
 
     const updateActiveCard = () => {
       if (!containerRef.current) return;
@@ -129,14 +45,15 @@ function InfinityScroll({ elements }: { elements: IPelements[] }) {
     const scrollInterval = setInterval(updateActiveCard, 100);
 
     return () => clearInterval(scrollInterval);
-  }, [isInViewport]);
+  }, [inView]);
 
   return (
-    <div className={styles["scroll-wrapper"]} ref={containerRef}>
+    <div className={styles["scroll-wrapper"]} ref={ref}>
       <div
-        className={` ${styles["scroll-track-left"]} ${
-          isInViewport ? "" : styles.animation_stop
+        className={`${styles["scroll-track-left"]} ${
+          inView ? "" : styles.animation_stop
         } flex gap-[50px]`}
+        ref={containerRef}
       >
         {elements.map((item, index) => {
           let scaleClass = "scale-80 duration-5000"; // Default size
