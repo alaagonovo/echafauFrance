@@ -7,7 +7,7 @@ import { IPelements } from "@/components/interface";
 
 function Card({ review }: { review: IPelements }) {
   return (
-    <article className={`${styles["scroll-item"]} p-4`}>
+    <article className={`${styles["scroll-item"]} p-4 z-10`}>
       <div className="w-[100px] h-[70px]  overflow-hidden relative p-1 shrink-0 mx-auto">
         <Image
           src={review.clientImage}

@@ -13,9 +13,7 @@
 }
 
 .scroll-track-left {
-  display: flex;
-  gap: 50px;
-  animation: scroll-infinite-left 32s linear infinite;
+  animation: scroll-infinite-left 30s linear infinite;
   animation-direction: alternate-reverse;
 }
 
@@ -35,10 +33,17 @@
 .scroll-track-left:hover {
   animation-play-state: paused;
 }
-
+.animation_stop {
+  animation-play-state: paused !important;
+}
+@media (max-width: 1024px) {
+  .scroll-wrapper {
+    padding: 12rem 0 4rem 0;
+  }
+}
 @media (max-width: 520px) {
   .scroll-track-left {
-    animation: scroll-infinite-left 60s linear infinite;
+    animation: scroll-infinite-left 70s linear infinite;
   }
 }
 /* Keyframes for continuous horizontal scrolling */
