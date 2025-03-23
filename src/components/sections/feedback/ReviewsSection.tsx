@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 // import styles from "./reviews.module.css";
 // import ReviewCard from "./reviewcard/ReviewCard";
