@@ -1,0 +1,54 @@
+.scroll-container {
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+  position: relative;
+  padding: 5rem;
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden; /* Prevent scrollbars */
+  position: relative;
+  padding: 10rem 0 4rem 0;
+}
+
+.scroll-track-left {
+  display: flex;
+  gap: 50px;
+  animation: scroll-infinite-left 32s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+.scroll-item {
+  position: relative;
+  flex-shrink: 0;
+  width: 280px;
+  height: 390px;
+  /* margin-right: 14px; */
+  box-shadow: 0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814;
+  border-radius: 16px;
+  border: 1px solid var(--thingray-color);
+  overflow: hidden;
+  background: #fff;
+  z-index: 9;
+}
+.scroll-track-left:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 520px) {
+  .scroll-track-left {
+    animation: scroll-infinite-left 60s linear infinite;
+  }
+}
+/* Keyframes for continuous horizontal scrolling */
+@keyframes scroll-infinite-left {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(
+      calc(100% - (8 * 325px))
+    ); /* Move left by one full track width */
+  }
+}

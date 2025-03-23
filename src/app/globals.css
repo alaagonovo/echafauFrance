@@ -53,3 +53,13 @@ input {
   border-radius: 8px 0 0 8px !important;
   background-color: white;
 }
+.swiper {
+  max-width: 100%;
+}
+.custom-5-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limits to 5 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

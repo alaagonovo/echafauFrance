@@ -55,3 +55,11 @@ export interface IProject {
   description: string;
   date: string;
 }
+
+/**reviews card props interface */
+export interface IPelements {
+  title: string;
+  clientName: string;
+  desc: string;
+  clientImage: string;
+}
