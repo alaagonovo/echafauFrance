@@ -24,7 +24,7 @@ function Hero() {
         <h1 className="text-4xl font-semibold">
           Présentation de notre expertise en échafaudage
         </h1>
-        <p className="text-xl">
+        <p className="text-xl font-medium">
           Découvrez notre portfolio de solutions d’échafaudage innovantes,
           soutenant des projets de toutes tailles en construction, maintenance
           et restauration.

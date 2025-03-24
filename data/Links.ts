@@ -21,7 +21,7 @@ const links = [
   },
   {
     name: "Contactez-nous",
-    path: "/",
+    path: "/getintouch",
   },
 ];
 export default links;

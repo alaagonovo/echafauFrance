@@ -33,7 +33,7 @@ function AboutUs() {
         </div>
 
         <div className="grid gap-8 grid-cols-1 lg:px-0 px-4">
-          <h1 className="lg:block hidden font-semibold text-[2.5rem] stext-[var(--dark-red)]">
+          <h1 className="lg:block hidden font-semibold text-[2.5rem]  ms-6">
             À Propos
           </h1>
           {aboutUsData.map((item, index) => (

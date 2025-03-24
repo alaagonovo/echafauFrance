@@ -32,7 +32,7 @@ function Footer() {
               <li key={index}>
                 <Link
                   href={item.path}
-                  className="text-sm font-light hover:underline"
+                  className="text-sm font-light hover:underline hover:text-[var(--main-red)] duration-300"
                 >
                   {item.name}
                 </Link>
