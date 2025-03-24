@@ -1,5 +1,4 @@
 import Statisticscard from "@/components/ui/numcard/Statisticscard";
-
 import React from "react";
 import numsData from "../../../../data/Statistics";
 import Maintitle from "@/components/common/maintitletext/Maintitle";
