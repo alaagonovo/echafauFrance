@@ -6,7 +6,7 @@ const services = [
       "Idéal pour atteindre des hauteurs difficiles d’accès, nos plateformes suspendues garantissent sécurité et stabilité, parfaites pour l’entretien des structures.",
   },
   {
-    icon: "/assets/scafflding2.png",
+    icon: "/assets/scafflding2.webp",
     title: "Échafaudage mobile",
     paragraph:
       "Nos solutions d’échafaudage mobile offrent une flexibilité inégalée pour les projets nécessitant des déplacements fréquents ou une grande mobilité.",

@@ -12,7 +12,7 @@ function Footer() {
         <div>
           <Link href="/">
             <Image
-              src="/assets/logo.png"
+              src="/assets/logo.webp"
               alt="our logo"
               width={120}
               height={60}
