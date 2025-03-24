@@ -18,6 +18,7 @@ function ProjectCard({ pro }: { pro: IProject }) {
         alt="project image"
         fill
         className="position-center object-cover"
+        loading="lazy"
         // style={{ boxShadow: "inset rgba(0, 0, 0, 0.9) 1px -93px 38px 2px" }}
       />
       <div
@@ -42,7 +43,7 @@ function ProjectCard({ pro }: { pro: IProject }) {
             <p className="text-white text-center mb-4">{description}</p>
             <p className="text-base text-white text-center mb-4">
               <span className="relative w-4 h-4 inline-block me-1">
-                <Image src="/svgs/locationIcon.svg" alt="location icon" fill />
+                <Image src="/svgs/locationIcon.svg" alt="location icon" fill  loading="lazy"/>
               </span>
               {pro.title}
             </p>

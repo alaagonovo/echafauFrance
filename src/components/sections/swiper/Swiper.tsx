@@ -24,6 +24,7 @@ const Reviews = () => {
               width={150}
               height={150}
               className="rotate-180"
+              loading="lazy"
             />
           </span>
         </div>

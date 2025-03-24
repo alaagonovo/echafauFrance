@@ -15,7 +15,7 @@ function SocialIcon({ icon, index }: { icon: IIconProps; index: number }) {
       data-aos-delay={index * 250}
       data-aos-offset="0"
     >
-      <Image src={icon.icon} alt="social Icon" fill />
+      <Image src={icon.icon} alt="social Icon" fill loading="lazy" />
     </Link>
   );
 }

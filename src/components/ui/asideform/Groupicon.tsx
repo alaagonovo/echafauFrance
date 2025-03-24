@@ -14,7 +14,7 @@ function Groupicon({ group, index }: { group: IGroupProps; index: number }) {
       data-aos-delay={(index + 1) * 200}
     >
       <div className="w-6  h-6 relative">
-        <Image src={group.icon} alt="contact us" fill />
+        <Image src={group.icon} alt="contact us" fill loading="lazy" />
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="font-semibold text-xl">{group.title}</h2>

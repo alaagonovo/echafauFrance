@@ -42,8 +42,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="video"
-          href="/videos/videoHero.mp4"
-          type="video/mp4"
+          href="/videos/videoHero.webm"
+          type="video/webm"
         />
       </body>
     </html>

@@ -10,7 +10,7 @@ function Servicescard({
   index: number;
 }) {
   const { icon, title, paragraph } = service;
-  console.log(index);
+  // console.log(index);
   return (
     <div>
       <article
@@ -23,7 +23,13 @@ function Servicescard({
             index === 1 ? "bg-white" : "bg-[var(--main-red)]"
           }`}
         >
-          <Image src={icon} alt="icon of service" width={48} height={48} />
+          <Image
+            src={icon}
+            alt="icon of service"
+            width={48}
+            height={48}
+            loading="lazy"
+          />
         </div>
         <h1
           className={`text-2xl font-medium mt-6 mb-2 text-center ${

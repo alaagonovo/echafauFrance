@@ -13,6 +13,7 @@ function Card({ review }: { review: IPelements }) {
           alt="client image"
           fill
           className="object-contain"
+          loading="lazy"
         />
       </div>
       <p className="text-md text-[var(--dark-blue)] text-center">
@@ -26,11 +27,18 @@ function Card({ review }: { review: IPelements }) {
           width={40}
           height={40}
           className="rotate-180"
+          loading="lazy"
         />
       </span>
       <p className="text-md text-center custom-5-truncate">{review.desc}</p>
       <span className="relative flex justify-end">
-        <Image src="/svgs/qoute.svg" alt="qoute image" width={40} height={40} />
+        <Image
+          src="/svgs/qoute.svg"
+          alt="qoute image"
+          width={40}
+          height={40}
+          loading="lazy"
+        />
       </span>
     </article>
   );

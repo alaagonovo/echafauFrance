@@ -16,6 +16,7 @@ function Footer() {
               alt="our logo"
               width={120}
               height={60}
+              loading="lazy"
             />
           </Link>
           <p className="text-sm font-light mt-4 text-gray-300">
@@ -56,6 +57,7 @@ function Footer() {
                     alt="whats app icon"
                     width={24}
                     height={24}
+                    loading="lazy"
                   />
                 </span>
                 WhatsApp
@@ -72,6 +74,7 @@ function Footer() {
                     alt="email icon"
                     width={24}
                     height={24}
+                    loading="lazy"
                   />
                 </span>
                 Email

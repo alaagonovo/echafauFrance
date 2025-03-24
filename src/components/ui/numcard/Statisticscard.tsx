@@ -15,6 +15,7 @@ function Statisticscard({ stc }: { stc: IStc }) {
         width={120}
         height={120}
         className="mx-auto my-4"
+        loading="lazy"
       />
       <h1 className="text-7xl text-center font-semibold text-[var(--main-red)] leading-18">
         {inView ? <SlotCounter startValue={0} value={num} duration={1.5} /> : 0}

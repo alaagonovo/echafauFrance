@@ -11,7 +11,7 @@
     0 0
   );
 }
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .footer_container {
     clip-path: polygon(
       44% 10%,

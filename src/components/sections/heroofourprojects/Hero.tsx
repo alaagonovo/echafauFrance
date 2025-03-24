@@ -13,7 +13,7 @@ function Hero() {
     >
       <div className="left-0 right-0 top-0 bottom-0 absolute after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/38 -z-10">
         <Image
-          src="/assets/projectscover.jpg"
+          src="/assets/projectscover.webp"
           fill
           alt="cover Image"
           className="object-cover object-center"

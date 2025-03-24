@@ -14,7 +14,7 @@ function MainHero() {
       >
         <div className="left-0 right-0 top-0 bottom-0 absolute after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/44 -z-10">
           <video
-            src="/videos/videoHero.mp4"
+            src="/videos/videoHero.webm"
             autoPlay
             loop
             muted

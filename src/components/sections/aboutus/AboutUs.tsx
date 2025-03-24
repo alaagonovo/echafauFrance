@@ -24,7 +24,7 @@ function AboutUs() {
             }}
           >
             <Image
-              src="/assets/aboutview.jpg"
+              src="/assets/aboutview.webp"
               alt="about Image view"
               fill
               loading="lazy"
@@ -47,7 +47,7 @@ function AboutUs() {
                   }
                 }
               >
-                <Image src={item.icon} fill alt="icon" />
+                <Image src={item.icon} fill alt="icon" loading="lazy" />
               </div>
               <p className="text-[21px]">{item.desc}</p>
             </div>

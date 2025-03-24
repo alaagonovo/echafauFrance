@@ -14,10 +14,11 @@ function Faqs() {
       id="faqs"
     >
       <Image
-        src="/assets/servvview.jpg"
+        src="/assets/servvview.webp"
         alt="cover image"
         fill
         className="z-[-1]"
+        loading="lazy"
       />
       <div className="mx-auto w-[92%] md:w-[88%]">
         <h1
