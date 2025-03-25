@@ -45,7 +45,11 @@ function Faqs() {
           ))}
         </div>
         <div>
-          <div className="flex justify-center mt-16">
+          <div
+            className="flex justify-center mt-16"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <RoundButton
               name="Obtenir un devis"
               path="/getaquote"

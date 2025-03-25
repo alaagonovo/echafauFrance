@@ -10,8 +10,8 @@ function ProjectCard({ pro }: { pro: IProject }) {
       style={{
         clipPath:
           "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 55% 100%, 12% 100%, 0 90%, 0% 30%)",
-        // backgroundImage: "url(/assets/cover.jpg)",
       }}
+      data-aos="zoom-out"
     >
       <Image
         src={image}
@@ -43,7 +43,12 @@ function ProjectCard({ pro }: { pro: IProject }) {
             <p className="text-white text-center mb-4">{description}</p>
             <p className="text-base text-white text-center mb-4">
               <span className="relative w-4 h-4 inline-block me-1">
-                <Image src="/svgs/locationIcon.svg" alt="location icon" fill  loading="lazy"/>
+                <Image
+                  src="/svgs/locationIcon.svg"
+                  alt="location icon"
+                  fill
+                  loading="lazy"
+                />
               </span>
               {pro.title}
             </p>

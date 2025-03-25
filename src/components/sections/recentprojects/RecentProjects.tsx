@@ -18,10 +18,10 @@ function RecentProjects() {
           />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {projectsData.map((pro, index) => (
-              <Projectcard key={index} proDetails={pro} />
+              <Projectcard key={index} proDetails={pro} index={index} />
             ))}
           </div>
-          <div className="block w-fit mt-12 mx-auto">
+          <div className="block w-fit mt-12 mx-auto" data-aos="fade-up">
             <RoundButton name="Voir tous les projets" path="/projects" />
           </div>
         </div>

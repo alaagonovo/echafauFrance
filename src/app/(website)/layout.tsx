@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import React from "react";
+import "aos/dist/aos.css";
 import "../globals.css";
 import Header from "@/components/common/header/Header";
-// import WithAOS from "@/components/ui/withAOS/WithAos";
+import WithAOS from "@/components/ui/withAOS/WithAos";
+
 const Footer = React.lazy(() => import("@/components/common/footer/Footer"));
 
 const urbanist = Urbanist({
@@ -35,16 +37,18 @@ export default function RootLayout({
   return (
     <html lang="fr" className={urbanist.className}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        {/* Preload Video */}
-        <link
-          rel="preload"
-          as="video"
-          href="/videos/videoHero.webm"
-          type="video/webm"
-        />
+        <WithAOS>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          {/* Preload Video */}
+          <link
+            rel="preload"
+            as="video"
+            href="/videos/videoHero.webm"
+            type="video/webm"
+          />
+        </WithAOS>
       </body>
     </html>
   );

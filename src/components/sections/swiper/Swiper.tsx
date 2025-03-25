@@ -14,7 +14,10 @@ const Reviews = () => {
           className="h-[90vh] lg:h-[80vh] mx-auto bg-gray-100 absolute left-0 right-0 xl:left-[15%] xl:right-[15%] top-0 bottom-[10%] shadow-md"
           style={{ borderRadius: "25px" }}
         >
-          <h1 className="text-3xl lg:text-5xl font-semibold text-black mt-7 text-center z-2 relative">
+          <h1
+            className="text-3xl lg:text-5xl font-semibold text-black mt-7 text-center z-2 relative"
+            data-aos="zoom-in-out"
+          >
             Ce que disent nos clients!
           </h1>
           <span className="absolute top-8 lg:top-6 left-6 z-1">

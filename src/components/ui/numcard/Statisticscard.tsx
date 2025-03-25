@@ -4,11 +4,11 @@ import SlotCounter from "react-slot-counter";
 import { useInView } from "react-intersection-observer";
 import { IStc } from "@/components/interface";
 import Image from "next/image";
-function Statisticscard({ stc }: { stc: IStc }) {
+function Statisticscard({ stc, index }: { stc: IStc; index: number }) {
   const [ref, inView] = useInView({ triggerOnce: true });
   const { num, sign, title, desc, icon } = stc;
   return (
-    <article ref={ref}>
+    <article ref={ref} data-aos="zoom-in-out" data-aos-delay={`${index * 250}`}>
       <Image
         src={icon}
         alt="icon of statics"

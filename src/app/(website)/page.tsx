@@ -1,11 +1,19 @@
+import React from "react";
 import MainHero from "@/components/hero/MainHero";
-import AboutUs from "@/components/sections/aboutus/AboutUs";
-import Faqs from "@/components/sections/faqs/Faqs";
-
-import Ournumbers from "@/components/sections/ournumbers/Ournumbers";
-import Services from "@/components/sections/ourservices/Services";
-import RecentProjects from "@/components/sections/recentprojects/RecentProjects";
-import Reviews from "@/components/sections/swiper/Swiper";
+const AboutUs = React.lazy(
+  () => import("@/components/sections/aboutus/AboutUs")
+);
+const RecentProjects = React.lazy(
+  () => import("@/components/sections/recentprojects/RecentProjects")
+);
+const Ournumbers = React.lazy(
+  () => import("@/components/sections/ournumbers/Ournumbers")
+);
+const Services = React.lazy(
+  () => import("@/components/sections/ourservices/Services")
+);
+const Faqs = React.lazy(() => import("@/components/sections/faqs/Faqs"));
+const Reviews = React.lazy(() => import("@/components/sections/swiper/Swiper"));
 
 export default function Home() {
   return (

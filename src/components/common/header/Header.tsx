@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -21,10 +20,12 @@ function Header() {
   return (
     <header
       className={`xl:w-[98%] mx-auto relative z-40 w-full ${styles.main_header}`}
+      data-aos="fade-down"
     >
       <div
         // data-aos="fade-up"
         // data-aos-delay="300"
+
         className={`p-4 lg:py-4 lg:px-8 absolute lg:bg-transparent bg-white w-full translate-x-[-50%] left-[50%]  ${styles.controls}`}
       >
         {/* logo */}

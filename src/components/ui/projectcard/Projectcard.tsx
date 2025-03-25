@@ -2,10 +2,20 @@ import { IPcard } from "@/components/interface";
 import Image from "next/image";
 import React from "react";
 
-function Projectcard({ proDetails }: { proDetails: IPcard }) {
+function Projectcard({
+  proDetails,
+  index,
+}: {
+  proDetails: IPcard;
+  index: number;
+}) {
   const { image, title, date } = proDetails;
   return (
-    <article className="max-w-[460px] lg:max-w-full lg:w-full relative overflow-hidden bg-white mx-auto rounded-xl">
+    <article
+      className="max-w-[460px] lg:max-w-full lg:w-full relative overflow-hidden bg-white mx-auto rounded-xl"
+      data-aos="zoom-in-out"
+      data-aos-delay={`${index * 250}`}
+    >
       <div className="relative h-[280px]">
         <Image
           src={image}

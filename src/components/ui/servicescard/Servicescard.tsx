@@ -17,6 +17,8 @@ function Servicescard({
         className={`w-[96%] mx-auto sm:w-[330px] rounded-lg ${
           index === 1 ? "bg-[var(--main-red)]" : "bg-white"
         }  p-6 relative`}
+        data-aos="zoom-in-out"
+        data-aos-delay={`${index * 250}`}
       >
         <div
           className={`w-[80px] h-[80px] rounded-full  p-4 mx-auto ${
