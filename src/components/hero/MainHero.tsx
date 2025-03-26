@@ -3,6 +3,7 @@ import React from "react";
 import Content from "./Content";
 // import Image from "next/image";
 import styles from "./mainhero.module.css";
+import ServicesIcon from "./ServicesIcon";
 function MainHero() {
   return (
     <section className="relative">
@@ -29,6 +30,7 @@ function MainHero() {
         /> */}
         </div>
         <Content />
+        <ServicesIcon />
       </div>
     </section>
   );

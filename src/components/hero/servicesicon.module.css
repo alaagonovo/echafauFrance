@@ -1,0 +1,30 @@
+.main_cont_icon {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: gap 300ms ease-in-out;
+  border: var(--main-red) solid 2px;
+}
+
+.main_cont_icon h2 {
+  opacity: 0;
+  max-width: 0; /* Use max-width instead of width */
+  overflow: hidden;
+  transition: max-width 300ms ease-in-out, opacity 300ms ease-in-out;
+  white-space: nowrap;
+}
+
+.main_cont_icon:hover {
+  gap: 16px; /* This will now transition properly */
+}
+
+.main_cont_icon:hover h2 {
+  max-width: 200px; /* Adjust this based on the text size */
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .main_cont_icon:hover {
+    gap: 8px;
+  }
+}

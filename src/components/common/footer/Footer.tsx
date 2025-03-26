@@ -6,7 +6,7 @@ import styles from "./footer.module.css";
 function Footer() {
   return (
     <footer
-      className={`bg-[#191919] pt-16 sm:pt-24 pb-12 text-white ${styles.footer_container}`}
+      className={`bg-[#191919] pt-24 sm:pt-40 pb-12 text-white ${styles.footer_container}`}
     >
       <div className="w-[90%] mx-auto md:grid-cols-2 grid lg:grid-cols-3 gap-8">
         <div>
@@ -14,9 +14,10 @@ function Footer() {
             <Image
               src="/assets/logo.webp"
               alt="our logo"
-              width={120}
-              height={60}
+              width={140}
+              height={80}
               loading="lazy"
+              className="mt-0 md:-mt-3"
             />
           </Link>
           <p className="text-sm font-light mt-4 text-gray-300">
@@ -49,7 +50,7 @@ function Footer() {
                 href="https://wa.me/2001212973305"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-light flex gap-2 items-center hover:underline"
+                className="text-sm font-light flex gap-2 items-center hover:underline hover:text-[var(--main-red)] duration-300"
               >
                 <span>
                   <Image
@@ -65,7 +66,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                className="text-sm font-light flex gap-2 items-center hover:underline"
+                className="text-sm font-light flex gap-2 items-center hover:underline hover:text-[var(--main-red)] duration-300"
                 href="mailto:your-email@example.com"
               >
                 <span>

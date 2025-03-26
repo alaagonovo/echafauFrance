@@ -7,7 +7,7 @@ import RoundButton from "@/components/common/roundbutton/RoundButton";
 
 function RecentProjects() {
   return (
-    <section className="mt-20 sm:mt-24 py-16 bg-[#ddd]">
+    <section className="pt-16 pb-22 bg-[#ddd]">
       <div className="max-w-[1380px] mx-auto">
         <div className="w-[92%] mx-auto">
           <Maintitle

@@ -36,7 +36,7 @@ function AboutUs() {
 
         <div className="grid gap-8 grid-cols-1 lg:px-0 px-4">
           <h1
-            className="lg:block hidden font-semibold text-[2.5rem]  ms-6"
+            className="lg:block hidden font-semibold text-[2.5rem]  ms-8"
             data-aos="fade-left"
           >
             À Propos

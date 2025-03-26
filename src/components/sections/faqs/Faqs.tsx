@@ -9,7 +9,7 @@ import RoundButton from "@/components/common/roundbutton/RoundButton";
 function Faqs() {
   return (
     <section
-      className="h-auto  relative pb-28 pt-16 lg:pb-28 lg:pt-24 mt-4"
+      className="h-auto  relative pb-28 pt-16 lg:pb-28 lg:pt-24"
       style={{ backgroundColor: "rgba(0,38,82,0.95)" }}
       id="faqs"
     >
@@ -34,7 +34,10 @@ function Faqs() {
         >
           Tout ce que vous devez savoir sur le produit et la facturation. Vous
           ne trouvez pas la réponse que vous cherchez ?
-          <Link href="/getintouch" className="underline decoration-1 ml-2 mr-1">
+          <Link
+            href="/getintouch"
+            className="underline decoration-1 ml-2 mr-1 hover:text-[var(--main-red)] font-medium duration-300"
+          >
             Discutez avec notre équipe amicale
           </Link>
           .

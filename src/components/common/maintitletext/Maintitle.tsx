@@ -17,7 +17,7 @@ function Maintitle({
       <h1
         className={`${
           title_Color ? `text-[${title_Color}]` : `text-[var(--dark-blue)]`
-        } text-5xl sm:text-6xl font-semibold text-center mb-8`}
+        } text-5xl sm:text-6xl font-semibold text-center mb-3 lg:mb-6`}
         data-aos="fade-up"
       >
         {title}

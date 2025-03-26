@@ -4,7 +4,7 @@ import Servicescard from "@/components/ui/servicescard/Servicescard";
 import Maintitle from "@/components/common/maintitletext/Maintitle";
 function Services() {
   return (
-    <section className="pt-16 pb-22 bg-[#ddd]" id="services">
+    <section className="mt-20 sm:mt-24 pt-16 pb-24 bg-[#ddd]" id="services">
       <div className="max-w-[1380px] mx-auto">
         <div className="w-[94%] mx-auto">
           <div className="">

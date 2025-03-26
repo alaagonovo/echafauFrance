@@ -7,25 +7,21 @@ const Reviews = () => {
   return (
     <section
       id="reviews"
-      className="scroll-container relative pb-16 bg-white rounded-ee-[40px] rounded-es-[40px]"
+      className="scroll-container relative bg-white rounded-ee-[40px] rounded-es-[40px]"
     >
-      <div className="mt-8 md:mt-22 flex flex-col gap-6 relative">
-        <div
-          className="h-[90vh] lg:h-[80vh] mx-auto bg-gray-100 absolute left-0 right-0 xl:left-[15%] xl:right-[15%] top-0 bottom-[10%] shadow-md"
-          style={{ borderRadius: "25px" }}
-        >
+      <div className="mt-8 mb-10 md:mt-22 md:mb-24 lg:mb-16 flex flex-col gap-6 relative">
+        <div className="h-[90vh] lg:h-[80vh] mx-auto bg-gray-100 absolute left-0 right-0 xl:left-[15%] xl:right-[15%] top-0 bottom-[10%] shadow-md xl:rounded-3xl rounded-0">
           <h1
-            className="text-3xl lg:text-5xl font-semibold text-black mt-7 text-center z-2 relative"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black mt-12 lg:mt-7 text-center z-2 relative"
             data-aos="zoom-in-out"
           >
             Ce que disent nos clients!
           </h1>
-          <span className="absolute top-8 lg:top-6 left-6 z-1">
+          <span className="relative -top-2 sm:-top-14 left-6 z-1 w-[90px] h-[90px] xl:w-[150px] xl:h-[150px] inline-block">
             <Image
               src="/svgs/qoute.svg"
               alt="qoute image"
-              width={150}
-              height={150}
+              fill
               className="rotate-180"
               loading="lazy"
             />
