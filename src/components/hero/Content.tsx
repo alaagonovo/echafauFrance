@@ -19,7 +19,7 @@ function Content() {
         Des services fiables, sécurisés et professionnels pour répondre
         parfaitement aux besoins de votre projet.
       </p>
-      <div data-aos="fade-up" data-aos-delay="400">
+      <div data-aos="fade-up" data-aos-delay="200">
         <RoundButton name="Contactez-nous" path="/getintouch" />
       </div>
     </div>

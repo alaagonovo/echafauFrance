@@ -5,7 +5,7 @@ import Image from "next/image";
 function AboutUs() {
   return (
     <section
-      className="md:mt-28 mt-16  mx-auto max-w-[1380px]"
+      className="md:mt-28 mt-16  mx-auto max-w-[1380px] overflow-x-hidden"
       id="aproposdenous"
     >
       <h1

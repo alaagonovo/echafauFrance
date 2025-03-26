@@ -39,7 +39,7 @@ function Hero() {
           soutenant des projets de toutes tailles en construction, maintenance
           et restauration.
         </p>
-        <div data-aos="fade-up" data-aos-delay="700">
+        <div data-aos="fade-up" data-aos-delay="550">
           <RoundButton name="Contactez-nous" path="/getintouch" />
         </div>
       </div>

@@ -11,7 +11,7 @@ function ProjectCard({ pro }: { pro: IProject }) {
         clipPath:
           "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 55% 100%, 12% 100%, 0 90%, 0% 30%)",
       }}
-      data-aos="zoom-out"
+      data-aos="zoom-in-out"
     >
       <Image
         src={image}
