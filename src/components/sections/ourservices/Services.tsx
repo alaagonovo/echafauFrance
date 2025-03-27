@@ -14,7 +14,7 @@ function Services() {
               bio_Color="#000"
               bio="Découvrez notre gamme complète de services d’échafaudage, spécialement conçus pour soutenir les projets de construction, de maintenance et de restauration."
             />
-            <div className="flex flex-wrap mt-16 gap-10  justify-center">
+            <div className="flex flex-wrap mt-16 gap-4  justify-center">
               {services.map((service, index) => (
                 <Servicescard service={service} key={index} index={index} />
               ))}

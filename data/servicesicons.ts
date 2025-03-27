@@ -1,19 +1,18 @@
 const ServicesIconData = [
   {
-    icon: "/svgs/scaff1.svg",
-    typeName: "Suspendu",
+    typeName: "Démontage échafaudage",
   },
   {
-    icon: "/svgs/scaff2.svg",
-    typeName: "Mobile",
+    typeName: "Montage échafaudage",
   },
   {
-    icon: "/svgs/scaff3.svg",
-    typeName: "Fixe",
+    typeName: "Plan échafaudage",
   },
   {
-    icon: "/svgs/scffolding4.svg",
-    typeName: "serv4",
+    typeName: "Note de calcul",
+  },
+  {
+    typeName: "Transport",
   },
 ];
 

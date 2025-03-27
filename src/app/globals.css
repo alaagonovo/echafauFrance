@@ -50,9 +50,14 @@ input {
 .swiper {
   max-width: 100%;
 }
-.custom-5-truncate {
-  display: -webkit-box;
+.truncate-5 {
   -webkit-line-clamp: 5; /* Limits to 5 lines */
+}
+.truncate-4 {
+  -webkit-line-clamp: 4;
+}
+.truncatee {
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

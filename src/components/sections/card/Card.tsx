@@ -30,7 +30,7 @@ function Card({ review }: { review: IPelements }) {
           loading="lazy"
         />
       </span>
-      <p className="text-md text-center custom-5-truncate">{review.desc}</p>
+      <p className="text-md text-center  truncatee truncate-5">{review.desc}</p>
       <span className="relative flex justify-end">
         <Image
           src="/svgs/qoute.svg"
