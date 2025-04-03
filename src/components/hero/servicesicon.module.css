@@ -2,32 +2,42 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  transition: gap 300ms ease-in-out;
+  /* transition: padding 600ms ease-in-out; */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 71%);
 }
-.main_cont_icon:hover {
-  background-color: var(--main-red);
-}
-.main_cont_icon:hover h2,
-.main_cont_icon:hover p {
-  color: #fff;
+@media (min-width: 1024px) {
+  .main_cont_icon:hover {
+    background-color: #335175;
+    padding-inline-end: 2rem;
+    transition: all 50ms;
+    transition-delay: 0s !important;
+  }
+
+  .main_cont_icon:hover h2,
+  .main_cont_icon:hover p {
+    color: #fff;
+  }
+  .main_cont_icon:hover p {
+    border-right-color: var(--main-red);
+  }
 }
 @media (max-width: 1024px) {
-  .main_cont_icon:hover h2 {
-    max-width: 200px; /* Adjust this based on the text size */
-    opacity: 1;
-  }
   .main_cont_icon h2 {
-    opacity: 0;
-    max-width: 0; /* Use max-width instead of width */
-    overflow: hidden;
-    transition: max-width 300ms ease-in-out, opacity 300ms ease-in-out;
-    white-space: nowrap;
+    display: none;
   }
-  .main_cont_icon:hover {
-    gap: 16px; /* This will now transition properly */
+  .main_cont_icon p {
+    border-right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .main_cont_icon .num_span {
+    display: none;
+  }
+  /* .main_cont_icon:hover {
+    gap: 16px;
+
   }
   .main_cont_icon:hover {
     gap: 8px;
-  }
+  } */
 }
