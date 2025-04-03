@@ -4,7 +4,7 @@ import allProjects from "../../../../data/allprojects";
 
 function Projectssection() {
   return (
-    <div className="max-w-[92%] mx-auto flex flex-wrap gap-10 justify-center my-16 pb-10">
+    <div className="max-w-[92%] mx-auto flex flex-wrap gap-10 justify-center my-16 pb-22">
       {allProjects.map((pro, index) => (
         <ProjectCard key={index} pro={pro} />
       ))}

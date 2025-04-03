@@ -81,6 +81,23 @@ function Footer() {
                 Email
               </Link>
             </li>
+            <li>
+              <Link
+                className="text-sm font-light flex gap-2 items-center hover:underline hover:text-[var(--main-red)] duration-300"
+                href="https://www.google.com/maps/search/84+grande+rue+78930+vert+France/@48.93656,1.6879191,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D"
+              >
+                <span>
+                  <Image
+                    src="/svgs/location.svg"
+                    alt="email icon"
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                  />
+                </span>
+                84 grande rue 78930 vert France
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
