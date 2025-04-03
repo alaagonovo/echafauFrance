@@ -13,3 +13,9 @@
     clip-path: none;
   }
 }
+
+@media (max-width: 460px) {
+  .special_width {
+    max-width: 380px;
+  }
+}
