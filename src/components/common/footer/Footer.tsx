@@ -67,7 +67,7 @@ function Footer() {
             <li>
               <Link
                 className="text-sm font-light flex gap-2 items-center hover:underline hover:text-[var(--main-red)] duration-300"
-                href="mailto:your-email@example.com"
+                href="mailto:100.echafaudages@gmail.com"
               >
                 <span>
                   <Image
@@ -78,7 +78,7 @@ function Footer() {
                     loading="lazy"
                   />
                 </span>
-                Email
+                100.echafaudages@gmail.com
               </Link>
             </li>
             <li>
@@ -89,7 +89,7 @@ function Footer() {
                 <span>
                   <Image
                     src="/svgs/location.svg"
-                    alt="email icon"
+                    alt="location icon"
                     width={24}
                     height={24}
                     loading="lazy"

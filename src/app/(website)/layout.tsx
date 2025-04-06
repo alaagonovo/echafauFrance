@@ -14,15 +14,17 @@ const urbanist = Urbanist({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Echafau'france",
-  description: "Site Web en français avec Next.js",
+  title: "100 Echafaudages 100",
+  description:
+    "Services d’échafaudage professionnels en France pour la construction, la maintenance et plus encore. Des solutions fiables, sûres et économiques, adaptées à vos besoins.",
   icons: { icon: "/assets/logo.webp" },
   metadataBase: new URL("https://yourwebsite.com"), // Set base URL
   openGraph: {
-    title: "Echafau'france",
-    description: "Découvrez Echafau'france, spécialiste en échafaudage",
+    title: "100 Echafaudages 100",
+    description:
+      "Services d’échafaudage professionnels en France pour la construction, la maintenance et plus encore. Des solutions fiables, sûres et économiques, adaptées à vos besoins.",
     url: "https://yourwebsite.com",
-    siteName: "Echafau'france",
+    siteName: "100 Echafaudages 100",
     images: ["/assets/logo.webp"],
     locale: "fr_FR",
     type: "website",

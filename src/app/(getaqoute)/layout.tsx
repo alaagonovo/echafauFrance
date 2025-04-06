@@ -12,7 +12,7 @@ const urbanist = Urbanist({
   weight: ["100", "200", "300", "400", "500", "600", "700"], // Specify the font weights you need
 });
 export const metadata: Metadata = {
-  title: "Scafolding",
+  title: "100 Echafaudages 100",
   description: "Get in Touch | Inquery",
   icons: "/assets/logo.webp",
 };

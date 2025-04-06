@@ -31,10 +31,10 @@ function MainTitle() {
       <p className="text-xl" data-aos="fade-up" data-aos-delay="250">
         Contactez-nous à tout moment via{" "}
         <Link
-          href="mailto:info@thescaffolding.co.uk"
+          href="mailto:100.echafaudages@gmail.com"
           className="text-[var(--main-red)] ml-2 hover:font-medium hover:underline"
         >
-          echafaufrance@gmail.com
+         100.echafaudages@gmail.com
         </Link>
       </p>
     </div>
