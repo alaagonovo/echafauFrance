@@ -4,19 +4,19 @@ const aboutUsData = [
   {
     icon: "/svgs/global.svg",
     color: "var(--dark-red)",
-    desc: `Echafau, avec ${expYears} ans d'excellence à travers l'Europe, apporte désormais fièrement ses solutions d'échafaudage innovantes à Paris. En utilisant des matériaux 100% métalliques, nous garantissons des approches durables, résistantes et à la pointe de la construction moderne.`,
+    desc: `Forts de ${expYears} ans d’excellence à travers l’Europe, Échafaudages 100 redéfinit les standards du secteur avec des solutions d’échafaudage innovantes et sécurisées à Paris. Spécialistes du montage, démontage, plan d’échafaudage, transport et note de calcul, nous utilisons des structures 100% métalliques pour des performances durables et résistantes, adaptées aux exigences de la construction moderne.`,
   },
   {
     icon: "/svgs/secure.svg",
     color: "var(--dark-red)",
     // color: "#32CD32",
-    desc: `La sécurité a toujours été notre pierre angulaire. Depuis ${expYears} ans, nous avons fièrement maintenu un taux d’accidents de 0% grâce à notre planification minutieuse et à nos procédures rigoureuses, de l’assemblage au démontage.`,
+    desc: `La sécurité est notre ADN : avec un taux d’accidents de 0% depuis notre création, nous garantissons des chantiers irréprochables grâce à une planification méticuleuse et des procédures rigoureuses à chaque étape.`,
   },
   {
     icon: "/svgs/power.svg",
     color: "var(--dark-red)",
     // color: "#FFFF00",
-    desc: `Aujourd’hui, en ${currentYear}, nous sommes le témoignage du pouvoir de l’innovation constante et du savoir-faire. Face2Face est bien plus qu’une entreprise d’échafaudage—nous sommes une promesse de fournir des solutions alliant fiabilité et durabilité.`,
+    desc: `En ${currentYear}, Échafaudages 100 incarne l’innovation et l’expertise. Bien plus qu’un prestataire, nous sommes votre partenaire pour des solutions alliant fiabilité, durabilité et précision technique, de l’étude préalable à la livraison finale.`,
   },
 ];
 
