@@ -12,10 +12,10 @@ function Footer() {
         <div>
           <Link href="/">
             <Image
-              src="/assets/logo.webp"
+              src="/svgs/blueLogo.svg"
               alt="our logo"
-              width={140}
-              height={80}
+              width={160}
+              height={85}
               loading="lazy"
               className="mt-0 md:-mt-3"
             />

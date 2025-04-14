@@ -15,7 +15,7 @@ function Aside({ toggleAside }: IToggleFunc) {
       className={`${styles.animation} bg-[#F3F4F6] w-full h-[100vh] fixed inset-0 p-4 z-10 overflow-y-scroll`}
     >
       <Image
-        src="/assets/logo.webp"
+        src="/svgs/blueLogo.svg"
         width={120}
         height={80}
         alt="logo of company"

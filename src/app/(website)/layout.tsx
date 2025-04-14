@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "100 Echafaudages 100",
   description:
     "Services d’échafaudage professionnels en France pour la construction, la maintenance et plus encore. Des solutions fiables, sûres et économiques, adaptées à vos besoins.",
-  icons: { icon: "/assets/logo.webp" },
+  icons: { icon: "/svgs/blueLogo.svg" },
   metadataBase: new URL("https://yourwebsite.com"), // Set base URL
   openGraph: {
     title: "100 Echafaudages 100",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Services d’échafaudage professionnels en France pour la construction, la maintenance et plus encore. Des solutions fiables, sûres et économiques, adaptées à vos besoins.",
     url: "https://yourwebsite.com",
     siteName: "100 Echafaudages 100",
-    images: ["/assets/logo.webp"],
+    images: ["/svgs/blueLogo.svg"],
     locale: "fr_FR",
     type: "website",
   },

@@ -14,7 +14,7 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "100 Echafaudages 100",
   description: "Get in Touch | Inquery",
-  icons: "/assets/logo.webp",
+  icons: "/svgs/logo.svg",
 };
 export default function GetAQuoteLayout({
   children,

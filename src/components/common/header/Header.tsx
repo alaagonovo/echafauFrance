@@ -32,10 +32,18 @@ function Header() {
         <div className="flex items-center relative justify-between">
           <Link href="/" className="block w-fit">
             <Image
-              src="/assets/logo.webp"
-              width={105}
-              height={60}
+              src="/svgs/logo.svg"
+              width={145}
+              height={80}
               alt="company logo"
+              className="lg:block hidden"
+            />
+            <Image
+              src="/svgs/blueLogo.svg"
+              width={145}
+              height={80}
+              alt="company logo"
+              className="block lg:hidden"
             />
           </Link>
           <div className={styles.links}>
