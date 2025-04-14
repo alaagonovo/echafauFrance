@@ -1,3 +1,4 @@
+const expYears = new Date().getFullYear() - 2007;
 const numsData = [
   {
     num: 500,
@@ -7,7 +8,7 @@ const numsData = [
     icon: "/svgs/quality.svg",
   },
   {
-    num: 18,
+    num: expYears,
     sign: "+",
     title: "Ans sur le Marché",
     desc: "Des années d'expertise et d'innovation au service du marché.",
