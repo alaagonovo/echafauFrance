@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <>
       <MainHero />
-      <AboutUs />
       <Services />
+      <AboutUs />
       <Ournumbers />
       <RecentProjects />
       <Reviews />
