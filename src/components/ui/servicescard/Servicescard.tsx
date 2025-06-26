@@ -15,7 +15,7 @@ function Servicescard({
     <div>
       <article
         className={`w-[96%] mx-auto  overflow-hidden sm:w-[246px] rounded-lg ${
-          index % 2 !== 0 ? "bg-[var(--main-red)]" : "bg-white"
+          index % 2 !== 0 ? "bg-[var(--main-red)]" : "bg-[#ddd]"
         }  p-6 relative`}
         data-aos="zoom-in-out"
         data-aos-delay={`${index * 250}`}
